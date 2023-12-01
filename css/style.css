@@ -1073,6 +1073,7 @@ letter-spacing: 0.48px;
 display: block;
 
 }
+
 .review-form-svg{
 display: inline-flex;
     width: 16px;
@@ -1121,19 +1122,32 @@ display: inline-flex;
     fill: none;
    stroke-width: 1px;
    cursor: pointer;
+   opacity: 0;
+  
   
    
 stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
-.review-form-checkbox:checked + .review-form-svg {
+
+.review-form-checkbox-non:checked + .review-form-checkbox > .review-form-svg{
+
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
 
+}
+.review-form-checkbox-non:checked + .review-form-checkbox .review-form-own-checkbox{
+opacity: 1;
+background-color: transparent;
+border: none;
+fill: #f4f4fd;
 }
 .review-form-field-wrapper-non{
     margin-bottom: 16px 
 }
 .review-form-checkbox-wrapper{
     margin-bottom: 24px;
+}
+.review-form-checkbox-non{
+
 }
