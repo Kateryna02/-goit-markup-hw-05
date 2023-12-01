@@ -1010,7 +1010,7 @@ margin-bottom: 4px;
 }
 
 .review-form-field-wrapper{
-    margin-bottom: 16px;
+    margin-bottom: 8px;
    
 }
 .review-form-field-icon{
@@ -1083,7 +1083,7 @@ display: inline-flex;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    margin-right: 8px;
 
 }
 
@@ -1121,13 +1121,19 @@ display: inline-flex;
     fill: none;
    stroke-width: 1px;
    cursor: pointer;
-   margin-right: 8px;
+  
    
 stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
-.review-form-checkbox:checked + .review-form-svg{
+.review-form-checkbox:checked + .review-form-svg {
     background-color: #404BBF;
     border: none;
     fill: #f4f4fd;
 
+}
+.review-form-field-wrapper-non{
+    margin-bottom: 16px 
+}
+.review-form-checkbox-wrapper{
+    margin-bottom: 24px;
 }
