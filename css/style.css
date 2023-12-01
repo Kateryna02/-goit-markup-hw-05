@@ -739,6 +739,52 @@ img {
 
 
 }
+.content-footer-link{
+    margin-right: 80px;
+}
+/* -------footer-3------ */
+
+.component-form{
+
+display: flex;
+gap: 24px;
+  
+}
+.form-input{
+    width: 264px;
+    height: 40px;
+    background: var(--NAVY-BLUE, #2E2F42);
+    border-radius: 4px;
+border: 1px solid var(--WHITE, #FFF);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+padding-left: 16px;
+padding-top: 8px;
+padding-bottom: 8px;
+
+}
+
+.component-title-button{
+    background: var(--accent);
+    color: var(--primary-bg-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.64px;
+    cursor: pointer;
+    padding: 8px 24px;
+    width: 165px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 16px;
+}
+
 
 /* cvg */
 .icons-link {
@@ -830,11 +876,11 @@ img {
 
 }
 
-.content-footer-link {}
+/* modal-window */
 
 .modal-window {
     width: 408px;
-    min-height: 584px;
+    height: 584px;
     flex-shrink: 0;
     border-radius: 4px;
     background: var(--DAIRY, #FCFCFC);
@@ -843,7 +889,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 40px;
+    padding: 24px;
+    padding-top: 72px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -908,7 +955,137 @@ img {
 .close-button-icon {
     fill: #2E2F42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+}
+/* ------form---- */
+.review-form{
+    display: block;
+}
+
+.review-form-description{
+color: var(--NAVY-BLUE, #2E2F42);
+text-align: center;
+font-size: 16px;
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.02em;
+padding-bottom: 16px;
+}
+.review-form-input {
+    width: 100%;
+    height: 40px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+padding-left: 38px;
+border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+outline: 0px solid transparent;
+}
+.review-form-input:focus{
+    border-color: #31d0aa;
+}
+.review-form-field-label{
+    display: block;
+    color: var(--LIGHT-SLATE, #8E8F99);
+font-size: 12px;
+font-weight: 400;
+line-height: 1.16; 
+letter-spacing: 0.04em;
+padding-bottom: 4px;
+
 
 }
 
-.current {}
+.review-form-field-wrapper{
+    margin-bottom: 8px;
+   
+}
+.review-form-field-icon{
+fill: #2e2f42;
+position: absolute;
+top: 50%;
+left: 16px;
+transform: translateY(-50%);
+
+
+}
+
+
+.review-form-input:focus + .review-form-field-icon {
+    
+   fill: #31d0aa;
+    }
+    
+.review-form-input-wrapper{
+    position: relative;
+
+}
+.review-form-comment{
+width: 100%;
+height: 120px;
+resize: none;
+padding-top: 8px;
+padding-left: 16px;
+padding-bottom: 0;
+border-radius: 4px;
+border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+.review-form-comment::placeholder {
+ color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+font-family: Roboto;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px
+}
+
+.review-form-checkbox{
+    color: var(--LIGHT-SLATE, #8E8F99);
+font-size: 12px;
+font-weight: 400;
+line-height: 14px; /* 116.667% */
+letter-spacing: 0.48px;
+}
+
+.color-policy{
+    color: var(--IRIS, #4D5AE5);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0.48px;
+    text-decoration-line: underline;
+}
+.review-form-submit-btn{
+    background: var(--IRIS, #4D5AE5);
+    color: var(--primary-bg-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    padding: 16px 32px;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+   margin: 24px auto;
+   
+
+
+}
+.review-form-own-checkbox{
+    display: inline-flex;
+    fill: none;
+   stroke-width: 1px;
+   cursor: pointer;
+   margin-right: 8px;
+   
+stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+}
+.review-form-checkbox:checked + .review-form-checkbox > .review-form-own-checkbox{
+    background-color: #ffffff;
+}
