@@ -787,10 +787,12 @@ background-color:transparent
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 16px;
+
 
 }
-
+.footer-button-svg{
+    margin-left: 16px;
+}
 
 /* cvg */
 .icons-link {
